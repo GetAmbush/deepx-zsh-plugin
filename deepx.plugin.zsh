@@ -8,11 +8,4 @@ function heckshot() {
 }
 
 # Connects to a screen in the local network using Screen Sharing
-function pair() {
-    if [[ $1 =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
-        open vnc://$1
-    else
-        COMPUTER_IP=$(dscacheutil -q host -a name $1.local | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')
-        open vnc://$COMPUTER_IP
-    fi
-}
+function pair () {open vnc://$1}
