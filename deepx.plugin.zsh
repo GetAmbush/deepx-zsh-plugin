@@ -1,4 +1,4 @@
-
+# Takes a screenshot of connected Android device using adb
 function heckshot() {
     FILENAME=$1
     FILENAME="${FILENAME:-screenshot}"
@@ -7,6 +7,7 @@ function heckshot() {
     adb shell rm /sdcard/$FILENAME.png
 }
 
+# Connects to a screen in the local network using Screen Sharing
 function pair() {
     if [[ $1 =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
         open vnc://$1
