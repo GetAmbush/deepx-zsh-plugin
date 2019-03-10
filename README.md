@@ -4,7 +4,7 @@ A zsh plugin where we can share useful and fun commands to help in our workflow 
 
 please don't delete my hard drive
 
-# Instalation
+# Installation
 
 ## [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 
